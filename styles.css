@@ -46,3 +46,13 @@
       transform: translateX(-100%);
     }
   }
+  @media screen and (max-width:516px) {
+    .car-img{
+        height: 30vh;
+    }
+    
+  }
+  .panding{
+    padding-top: 18px ;
+    padding-bottom: 18px ;
+  }
