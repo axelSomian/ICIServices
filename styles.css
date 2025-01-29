@@ -1,0 +1,48 @@
+#logo-img{
+    width: 100px;
+    height: 100px;
+}
+.car-img{
+    height: 50vh;
+}
+.p-color{
+    color: #DD0A10
+}
+.bg-color{
+   background-color: #F2C46D
+}
+
+.p-secondary{
+    color: #F2C46D
+}
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #f8f9fa; /* Fond clair */
+    padding: 20px 0;
+  }
+
+  .marquee {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+
+  .marquee img {
+    height: 80px; /* Taille des logos */
+    margin: 0 20px;
+    transition: transform 0.1s;
+  }
+
+  .marquee img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
