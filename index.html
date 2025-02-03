@@ -9,196 +9,177 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>    
-    <nav class="navbar  navbar-expand-lg ">
-        <div class="container px-5 ">
+    <header>   
+      <nav class="navbar navbar-expand-lg navbar-light bg-white  fixed-top">
+        <div class="container-fluid px-5">
           <a class="navbar-brand" href="#">
             <img src="./Assets/imgs/logo.png" id="logo-img" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse  bg-lg-none justify-content-end" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
-            <a class="nav-link active"href="#">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#services">Nos Services</a>
-          </li>      
-          <li class="nav-item">
-            <a class="nav-link " href="#about">A propos</a>
-          </li>  
-          <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  bg-lg-none justify-content-end" id="navbarNav">
+              <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                  <a class="nav-link active"href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./Pages/services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/realisations.html">Réalisations</a>
+                </li>      
+              </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     </header>
-    <main>
-        <section  >
-                <div class="container">
-                <div id="carouselExampleAutoplaying" class="carousel slide h-50" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./Assets/imgs/122.jpg" class="d-block w-100 car-img img-fluid" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                         <img src="./Assets/imgs/20.jpg" class="d-block w-100 car-img img-fluid" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                         <img src="./Assets/imgs/3.jpg" class="d-block w-100 car-img img-fluid" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-            </section>
+    <main class="mt-5">
+      <section class="accueil">
+        <div class="acceuil-txt">
+            <h1 class="fs-1">  ICI Services </h1>
+            <p class="fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit officiis assumenda adipisci repellat eius autem, id nobis, obcaecati, cumque maxime aut itaq
+              <br>ue neque reiciendis quam vitae. Modi animi est ipsa.</p>
+        </div>
+    </section>
 
-            <section id="services" class="pt-2">
-                <div class="container  rounded">
-                    <h2 class=" p-secondary text-center  py-2" >Nos Services</h2>
-                    <div class="container mt-5">
-                        <div class="row">
-                          <!-- Card 1 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="text-center text-danger"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-fire " viewBox="0 0 16 16">
-                                            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
-                                          </svg>
-                                          <h5 class="text-center">Incendie</h5>
-                                    </p>
-                                  <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
-                                 
-                                </div>
-                              </div>
-                          </div>
-                      
-                          <!-- Card 2 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="text-center text-danger"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
-                                            <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
-                                            <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
-                                          </svg>
-                                        <h5 class="text-center">Metrologie</h5>
-                                    </p>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                               
-                                </div>
-                              </div>
-                          </div>
-                      
-                          <!-- Card 3 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="text-center text-danger"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
-                                            <path d="M16 4.5a4.5 4.5 0 0 1-1.703 3.526L13 5l2.959-1.11q.04.3.041.61"/>
-                                            <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.5 4.5 0 0 0 11.5 9m-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376M3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                                          </svg>
-                                        <h5 class="text-center">Robineterie</h5>
-                                    </p>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                                </div>
-                              </div>
-                          </div>
-                      
-                          <!-- Card 4 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <p class="text-center text-danger"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-fuel-pump" viewBox="0 0 16 16">
-                                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
-                                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
-                                          </svg>
-                                        <h5 class="text-center">Diesel</h5>
-                                    </p>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>    
-
-            </section>
-
-            <section id="about">
-                <div class="container bg-color rounded panding">
-                    <h2 class=" text-center pb-5 pt-2 text-white" >A propos de <span class="text-danger"> ICI Services</span></h2>
-                    
+            <section id="" class="mt-5">
+                <div class="container ">
                     <div class="row">
-                        <div class="col-12 col-md-6">
-                            <p class="fs-5 align-middle">
-                                Depuis 2010, ICI SERVICES sert le paysage industriel ivoirien <br>Nous vous offrons divers services tels que le dépannage, la maintenance, 
-                                l’étude, et projet de vos installations. 
-                                Notre priorité est de travailler dans le respect des normes internationales, d’optimiser la continuité de service et production, et de satisfaireclass="marquee-img"  nos clients en les rendant autonomes localement. 
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="./Assets/imgs/tuyau.jpg" class="w-100 rounded-start" alt="">
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <section class="text-center py-5">
-                    <div class="container bg-white">
-                      <h2 class="mb-4 p-secondary">Ils nous font confiance</h2>
-
-
-
-
-                      <div class="marquee-container overflow-hidden bg-light shadow-sm">
-                        <div class="marquee-content d-flex align-items-center">
-                          <div class="marquee-item px-4 py-2  text-white mx-2">
-                            <img src="./Assets/imgs/logoscb.png" class="marquee-img" alt="Client 1">
-                          </div>
-                          <div class="marquee-item px-4 py-2  text-white mx-2">
-                            <img src="./Assets/imgs/frieland.png" class="marquee-img" alt="Client 2">
-
-                          </div>
-                          <div class="marquee-item px-4 py-2  text-white mx-2">
-                            <img src="/Assets/imgs/cie.png" class="marquee-img" alt="Client 3">
-                          </div>
-                          <div class="marquee-item px-4 py-2  text-dark mx-2">
-                            <img src="/Assets/imgs/cyprel.png" class="marquee-img" alt="Client 4">
-                          </div>
-                          <div class="marquee-item px-4 py-2  text-white mx-2">
-                            <img src="/Assets/imgs/sogeflx.png" class="marquee-img" alt="Client 5">
-                          </div>
-                          <div class="marquee-item px-4 py-2  text-white mx-2">
-                            <img src="/Assets/imgs/fx.png" class="marquee-img" alt="Client 6">
-                          </div>
-                        </div>
+                      <div class="col-12 col-md-7 d-flex flex-column  justify-content-center ">
+                        <h2 class="text-secondary">QUI SOMMES NOUS ?</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis explicabo qui reiciendis dicta iure tempore exercitationem est cumque incidunt ipsam delectus natus ea velit, repellat possimus eaque et molestias?
+                        </p>
                       </div>
-
-
+                      <div class="col-12 col-md-5">
+                        <img src="./Assets/imgs/im-2.jpg" class=" w-100" alt="">
+                      </div>
                     </div>
-                  </section>
+                </div>    
             </section>
 
-            <section id="contact">
+
+            <section id="services" class="mt-5 bg-light py-5">
+              <div class="container">
+                <h2 class=" text-secondary " >SERVICES </h2>
+         
+                    <div class="row border-top pt-5">
+                      <!-- Card 1 -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="text-center text-danger"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-fire " viewBox="0 0 16 16">
+                                        <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                                      </svg>
+                                      <h5 class="text-center">Incendie</h5>
+                                </p>
+                              <p class="card-text text-center">l’expertise au service de l’industrie depuis 2010.</p>
+                             
+                            </div>
+                          </div>
+                      </div>
+                  
+                      <!-- Card 2 -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="text-center text-danger"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                                        <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+                                        <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+                                      </svg>
+                                    <h5 class="text-center">Metrologie</h5>
+                                </p>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                           
+                            </div>
+                          </div>
+                      </div>
+                  
+                      <!-- Card 3 -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="text-center text-danger"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
+                                        <path d="M16 4.5a4.5 4.5 0 0 1-1.703 3.526L13 5l2.959-1.11q.04.3.041.61"/>
+                                        <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.5 4.5 0 0 0 11.5 9m-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376M3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                      </svg>
+                                    <h5 class="text-center">Robineterie</h5>
+                                </p>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            
+                            </div>
+                          </div>
+                      </div>
+                  
+                      <!-- Card 4 -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+  
+                                <p class="text-center text-danger"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-fuel-pump" viewBox="0 0 16 16">
+                                        <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                                      </svg>
+                                    <h5 class="text-center">Diesel</h5>
+                                </p>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  
+              </div>
+   
+            </section>
+
+            <section >
+                <div class="container mt-5">
+                    <h2 class="   pt-2 text-secondary">REALISATIONS</h2>
+                    
+                    <div class="row border-top pt-5 ">
+                        <div class="col-12 col-md-4">
+                          <div class="card w-100" >
+                            <img src="./Assets/imgs/beautiful-sunset-oil-field-with-pump-jack.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div class="card w-100" >
+                            <img src="./Assets/imgs/beautiful-sunset-oil-field-with-pump-jack.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <div class="card w-100" >
+                            <img src="./Assets/imgs/beautiful-sunset-oil-field-with-pump-jack.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="btn btn-warning text-white mt-3"> Voir plus</a> -->
+                    <a href="./Pages/realisations.html" class="btn btn-warning text-white mt-3">Voir plus</a>
+                </div>
+            </section>
+
+            <section id="contact" class="mt-5 bg-light py-5">
                 <div class="container mt-5">
                     <div class="row justify-content-center text-center">
                       <div class="col-md-8">
@@ -226,7 +207,7 @@
                             <i class="bi bi-envelope-fill text-primary fs-2"></i>
                             <h5 class="card-title mt-3">E-mail</h5>
                             <p class="card-text">contact@entreprise.com</p>
-                            <p class="card-text">support@entreprise.com</p>
+                            
                           </div>
                         </div>
                       </div>
@@ -236,6 +217,7 @@
             <footer class="bg-dark text-white text-center py-3 mt-4">
                 <p class="mb-0">&copy; 2025 ICI Service. Designed by <strong>CoderGroup</strong>.</p>
               </footer>
+             
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -1,66 +1,75 @@
 #logo-img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
-.car-img{
-    height: 50vh;
-}
-.p-color{
-    color: #DD0A10
-}
-.bg-color{
-   background-color: #F2C46D
-}
-
-.p-secondary{
-    color: #F2C46D
-}
-/* .marquee-container {
-  width: 100%;
-  background-color: #f8f9fa;
-  padding: 15px 0;
-} */
-
-.marquee-content {
+ /* Section d'accueil avec image */
+ .accueil {
+  background-image: url('./Assets/imgs/environmental-pollution-factory-exterior-night.jpg'); /* Remplacez par le chemin de votre image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 100% de la hauteur de l'écran */
   display: flex;
-  animation: marquee 20s linear infinite;
+  /* align-items: center; */
+  justify-content: center;
+  color: white; /* Couleur du texte */
+  text-align: center;
+}
+.acceuil-txt{
+  margin-top: 10rem;
+  transform: scale(1);
+  transition: 0.9s;
+
 }
 
-.marquee-item {
-  flex: 0 0 auto;
-  padding: 0 20px;
-  font-size: 1.2rem;
-  color: #495057;
-}
-.marquee-img{
-  /* height: 100px; */
-  width: 150px;
+
+.accueil h1 {
+  font-size: 4rem;
+  font-weight: bold;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
+.accueil p {
+  font-size: 1.5rem;
+}
+.text-primary{
 
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
-/* Optional: Pause animation on hover */
-.marquee-container:hover .marquee-content {
-  animation-play-state: paused;
-}
-  @media screen and (max-width:516px) {
-    .car-img{
-        height: 30vh;
-    }
-    
-  }
-  .panding{
-    padding-top: 18px ;
-    padding-bottom: 18px ;
-  }
+  
   *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
   }
+  .taille-img-sec{
+    height: 60vh;
+  }
+
+  .services{
+    background-image: url('./Assets/imgs/environmental-pollution-industry-exterior-daylight.jpg'); /* Remplacez par le chemin de votre image */
+    /* 100% de la hauteur de l'écran */
+    
+  }
+  .realisation{
+    background-image: url('./Assets/imgs/working-housing-project.jpg'); /* Remplacez par le chemin de votre image */
+
+  }
+  @media screen and (max-width: 768px){
+    
+    .row-s{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+     .row-s div h2{
+      display: flex;
+      text-align: start;
+      justify-content: left;
+     }
+
+    
+  }
+  @media screen and (min-width:769px) {
+    .services-title{
+      text-align: right;
+     }
+  }
+  
