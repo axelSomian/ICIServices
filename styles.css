@@ -4,7 +4,7 @@
 }
  /* Section d'accueil avec image */
  .accueil {
-  background-image: url('./Assets/imgs/environmental-pollution-factory-exterior-night.jpg'); /* Remplacez par le chemin de votre image */
+  background-image: url('./Assets/imgs/environmental-pollution-factory-exterior-night.webp'); /* Remplacez par le chemin de votre image */
   background-size: cover;
   background-position: center;
   height: 100vh; /* 100% de la hauteur de l'écran */
@@ -30,9 +30,7 @@
 .accueil p {
   font-size: 1.5rem;
 }
-.text-primary{
 
-}
 
   
   *{
@@ -45,12 +43,12 @@
   }
 
   .services{
-    background-image: url('./Assets/imgs/environmental-pollution-industry-exterior-daylight.jpg'); /* Remplacez par le chemin de votre image */
+    background-image: url('./Assets/imgs/environmental-pollution-industry-exterior-daylight.avif'); /* Remplacez par le chemin de votre image */
     /* 100% de la hauteur de l'écran */
     
   }
   .realisation{
-    background-image: url('./Assets/imgs/working-housing-project.jpg'); /* Remplacez par le chemin de votre image */
+    background-image: url('./Assets/imgs/working-housing-project.avif'); /* Remplacez par le chemin de votre image */
 
   }
   @media screen and (max-width: 768px){
@@ -72,4 +70,44 @@
       text-align: right;
      }
   }
-  
+  .card-s{
+    height: 250px;
+  }
+  .timeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .timeline-item .timeline-icon {
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  .timeline-item .timeline-content {
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    border: 1px solid #e3e4e8;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .timeline-item .timeline-content h5 {
+    margin-bottom: 0.5rem;
+  }
+  .timeline-header {
+    margin-bottom: 3rem;
+  }
+  .timeline-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
