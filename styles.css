@@ -1,6 +1,8 @@
 #logo-img{
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
 }
  /* Section d'accueil avec image */
  .accueil {
@@ -115,3 +117,19 @@
     position: absolute;
     bottom: 0;
   }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e3e4e8;
+}
