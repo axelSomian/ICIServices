@@ -133,3 +133,22 @@
   background-color: #f8f9fa;
   border-top: 1px solid #e3e4e8;
 }
+/* Pour Chrome, Safari et Edge */
+::-webkit-scrollbar {
+  width: 5px; /* Largeur de la scrollbar */
+  height: 5px; /* Hauteur pour le défilement horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de l'arrière-plan de la piste */
+  border-radius: 10px; /* Bords arrondis */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 196, 0); /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Bords arrondis */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Couleur lors du survol */
+}
