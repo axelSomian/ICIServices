@@ -1,8 +1,12 @@
 #logo-img{
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     padding: 0;
     margin: 0;
+}
+#chiffres .shadow-sm:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
  /* Section d'accueil avec image */
  .accueil {
@@ -74,6 +78,9 @@
   }
   .card-s{
     height: 250px;
+  }
+   .card-c{
+    height: 100px;
   }
   .timeline {
     position: relative;
