@@ -1,6 +1,6 @@
 #logo-img{
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     padding: 0;
     margin: 0;
 }
@@ -158,4 +158,9 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Couleur lors du survol */
+}
+
+/* Remove dropdown arrow */
+.navbar .dropdown-toggle::after {
+    display: none;
 }
