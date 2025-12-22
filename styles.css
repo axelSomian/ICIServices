@@ -206,11 +206,70 @@
 }
 
 
+/* Navigation Font Size */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  /* Increased size */
+  font-weight: 500;
+}
+
+/* Service Cards for Diesel Page */
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #dc3545;
+  /* Bootstrap danger color for accent */
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.service-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.service-card.border-top-accent {
+  border-top: 4px solid #dc3545;
+  padding-top: 2rem;
+}
+
+/* Spacing Utilities */
+.subpage-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-spacer {
+  margin-bottom: 5rem;
+}
+
 /* Service Page Banners */
 .page-banner {
   position: relative;
-  height: 300px;
-  /* Adjust height as needed */
+  height: 400px;
+  /* Increased height for better grandeur */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -218,8 +277,32 @@
   justify-content: center;
   color: white;
   text-align: center;
-  margin-top: 230px;
-  /* Space for fixed navbar */
+  margin-top: 0;
+  /* Removing top margin if strictly using fixed header correctly */
+  padding-top: 100px;
+  /* Compensation for fixed header overlap if needed, or adjust */
+}
+
+/* Note: The previous margin-top: 230px seemed excessive or specific to a very tall header. 
+   I will check if I should keep it or adjust. 
+   User complained about "coller a la premiere image". 
+   The banner sits UNDER the header? Or pushes content?
+   Let's stick to adding padding to the main content container first.
+*/
+
+.page-banner {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* margin-top: 230px; Keep existing if it works for their header, but it looks large. */
+  margin-top: 160px;
+  /* Reduced slightly, but adding large padding to main */
 }
 
 .page-banner::before {
@@ -229,8 +312,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Slightly darker for better text contrast */
 }
 
 .page-banner-content {
@@ -261,19 +344,19 @@
 
 /* Specific Backgrounds */
 .banner-diesel {
-  background-image: url('./Assets/imgs/diesel.webp');
+  background-image: url('./Assets/imgs/Photo2.jpg');
 }
 
 .banner-incendie {
-  background-image: url('./Assets/imgs/incen.webp');
+  background-image: url('./Assets/imgs/photo3N.jpg');
 }
 
 .banner-metrologie {
-  background-image: url('./Assets/imgs/metro.webp');
+  background-image: url('./Assets/imgs/metro.jpg');
 }
 
 .banner-robinetterie {
-  background-image: url('./Assets/imgs/rob.webp');
+  background-image: url('./Assets/imgs/PHOTO 4.jpg');
 }
 
 .banner-achat {

@@ -14,7 +14,12 @@
 
 <body>
   <header class=" fixed-top">
-    <section class="bg-light py-2 text-end px-5">
+    <section class="bg-light py-2 px-5 d-flex justify-content-end align-items-center">
+      <div class="me-4 small fw-bold font-monospace">
+        <span class="text-dark">FR</span>
+        <span class="mx-2 text-muted">|</span>
+        <a href="#" class="text-muted text-decoration-none text-opacity-75 hover-opacity-100">EN</a>
+      </div>
       <a href="https://www.linkedin.com/company/ici-servicesci/" target="_blank"
         class="text-decoration-none text-primary"><i class="bi bi-linkedin fs-4 align-middle"></i></a>
     </section>
@@ -77,55 +82,90 @@
   </section>
   <main class="container mt-5 pt-5 subpage-padding">
 
-    <section class="mb-5">
-      <h2 class="h3 text-secondary"><i class="bi bi-tools"></i> Nos Services</h2>
-      <p class="lead">
-        Nous offrons une gamme complète de services de protection contre les incendies
-        pour assurer la sécurité de vos installations. Que ce soit pour l'installation,
-        la maintenance ou l'inspection, notre équipe de professionnels est là pour vous aider.
-      </p>
-    </section>
+    <section class="mb-5 py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="h3 text-secondary mb-3 display-6">Nos Services</h2>
+          <p class="lead text-muted lh-lg">
+            Nous offrons une gamme complète de services de protection contre les incendies pour assurer la sécurité de
+            vos
+            installations. De l'audit à la maintenance, notre expertise garantit votre conformité.
+          </p>
 
-    <!-- Nouvelle section Nos Prestations Incendie -->
-    <section class="mb-5">
-      <h2 class="h3 text-secondary"><i class="bi bi-list-check"></i> Nos Prestations Incendie</h2>
-      <ul class="list-group list-group-flush fs-5">
-        <li class="list-group-item">
-          <strong>Expertise & audit :</strong> Respect des normes en vigueurs et coller à l’évolution normative.
-        </li>
-        <li class="list-group-item">
-          <strong>Étude :</strong> Conception de systèmes incendie adaptés aux risques spécifiques de votre site,
-          dans le respect des normes et des attentes de vos assurances.
-        </li>
-        <li class="list-group-item">
-          <strong>Maintenance :</strong> Vérifications réglementaires, essais fonctionnels, remplacement des équipements
-          non conformes.
-        </li>
-        <li class="list-group-item">
-          <strong>Dépannage :</strong> Intervention sur défauts de pression, déclenchements intempestifs, fuites.
-        </li>
-        <li class="list-group-item">
-          <strong>Travaux neufs :</strong> Installation complète de dispositifs de sécurité incendie, mise en conformité
-          de bâtiments.
-        </li>
-        <li class="list-group-item">
-          <strong>Type de systèmes :</strong> détection linéaire/aspiration/optique, extinction à gaz,
-          extinction déluge, USD & émulseur, groupe motopompe incendie et etc.
-        </li>
-      </ul>
-    </section>
-
-
-    <section class="mb-5">
-      <h2 class="h3 text-secondary mb-4"><i class="bi bi-images"></i> Nos Réalisations</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <img src="../Assets/imgs/P3.jpg" class="img-fluid rounded shadow w-100 h-100 object-fit-cover"
-            alt="Réalisation Diesel 1">
         </div>
-        <div class="col-md-6">
-          <img src="../Assets/imgs/P4.png" class=" img-fluid rounded shadow w-100 h-100 object-fit-cover"
-            alt="Réalisation Diesel 2">
+        <div class="col-lg-6">
+          <img src="../Assets/imgs/P3.jpg" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+            style="max-height: 400px;" alt="Protection Incendie">
+        </div>
+      </div>
+    </section>
+
+    <section id="prestations-incendie" class="mb-5 py-5 bg-light rounded-4 px-4 px-md-5 my-5">
+      <div class="text-center mb-5">
+
+        <h2 class="h3 fw-bold text-dark display-6">Nos Prestations Incendie</h2>
+
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Expertise -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Expertise & Audit</h5>
+            <p class="small text-muted mb-0">Respect des normes en vigueur et veille normative.</p>
+          </div>
+        </div>
+        <!-- Etude -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Étude & Conception</h5>
+            <p class="small text-muted mb-0">Conception adaptée aux risques et exigences ssurantielles.</p>
+          </div>
+        </div>
+        <!-- Maintenance -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Maintenance</h5>
+            <p class="small text-muted mb-0">Vérifications réglementaires et essais fonctionnels.</p>
+          </div>
+        </div>
+        <!-- Dépannage -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Dépannage</h5>
+            <p class="small text-muted mb-0">Intervention rapide sur défauts et fuites.</p>
+          </div>
+        </div>
+
+        <!-- Travaux neufs -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Travaux Neufs</h5>
+            <p class="small text-muted mb-0">Installation complète et mise en conformité.</p>
+          </div>
+        </div>
+        <!-- Systèmes -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Systèmes & Équipements</h5>
+            <p class="small text-muted mb-0">Détection, extinction (gaz, déluge, mousse), pompes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5 py-5">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5">
+          <h3 class="h4 text-secondary mb-3 display-6">Excellence Opérationnelle</h3>
+          <p class="lead text-muted lh-lg">
+            Nous déployons des technologies de pointe pour garantir la fiabilité de vos systèmes de sécurité incendie.
+            Notre engagement est votre sérénité.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="../Assets/imgs/P4.png" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+            alt="Installation Incendie">
         </div>
       </div>
     </section>

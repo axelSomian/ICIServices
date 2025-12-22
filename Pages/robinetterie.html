@@ -14,7 +14,12 @@
 
 <body>
   <header class="fixed-top">
-    <section class="bg-light py-2 text-end px-5">
+    <section class="bg-light py-2 px-5 d-flex justify-content-end align-items-center">
+      <div class="me-4 small fw-bold font-monospace">
+        <span class="text-dark">FR</span>
+        <span class="mx-2 text-muted">|</span>
+        <a href="#" class="text-muted text-decoration-none text-opacity-75 hover-opacity-100">EN</a>
+      </div>
       <a href="https://www.linkedin.com/company/ici-servicesci/" target="_blank"
         class="text-decoration-none text-primary"><i class="bi bi-linkedin fs-4 align-middle"></i>
       </a>
@@ -79,62 +84,90 @@
   </section>
   <main class="container subpage-padding">
 
-    <section class="mb-5">
-      <h2 class="h3 text-secondary"><i class="bi bi-tools"></i> Nos Services</h2>
-      <p class="lead">
-        Nous offrons une gamme complète de services de robinetterie pour répondre à tous vos besoins.
-        Que ce soit pour l'installation, la réparation ou l'entretien, notre équipe de professionnels est là pour vous
-        aider.
-      </p>
-    </section>
-
-    <!-- Nouvelle section "Nos Prestations" -->
-    <section class="mb-5">
-      <h2 class="h3 text-secondary"><i class="bi bi-list-check"></i> Nos Prestations</h2>
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <ul class="list-group list-group-flush fs-5">
-            <li class="list-group-item">
-              <strong>Étude technique :</strong> Dimensionnement, sélection des robinets, étude de compatibilité
-              chimique et mécanique avec les process.
-            </li>
-            <li class="list-group-item">
-              <strong>Maintenance :</strong> Révision, épreuve d’étanchéité à travers nos bancs d’épreuve, tarage des
-              soupapes sur banc numérique et contrôles en conformité avec les normes. Maintenance préventive, réfection
-              de presse étoupe et graissage.
-            </li>
-            <li class="list-group-item">
-              <strong>Dépannage :</strong> Service d’astreinte, remise en état sur site avec nos machines portatives de
-              rodage.
-            </li>
-            <li class="list-group-item">
-              <strong>Travaux neufs :</strong> Pose de tuyauterie & robinetterie sur des projets sur-mesure ou
-              extension.
-            </li>
-            <li class="list-group-item">
-              <strong>Parc machine :</strong> Rodage : TCEM V10 (jusqu'au ø300mm), Rodage plan (jusqu'au ø300mm),
-              Usinage : SERCO TU200,TU600,TU1100 (jusqu'au ø1100 mm), Banc de tarage fixe 250 BAR / DN 300, banc de
-              tarage mobile 250 BAR / DN 650
-            </li>
-          </ul>
+    <section class="mb-5 py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="h3 text-secondary mb-3 display-6">Nos Services</h2>
+          <p class="lead text-muted lh-lg">
+            Nous offrons une gamme complète de services de robinetterie pour répondre à tous vos besoins.
+            Que ce soit pour l'installation, la réparation ou l'entretien, notre équipe de professionnels est là pour
+            vous
+            aider.
+          </p>
+          <a href="#prestations-robinetterie" class="btn btn-outline-danger mt-3 px-4 py-2 rounded-pill">Nos
+            Expertises</a>
         </div>
-        <div class="col-lg-5 text-center">
-          <img src="../Assets/imgs/PHOTO 5.jpg" alt="Photo 5 - Équipements" class="img-fluid rounded shadow"
-            style="max-height: 350px; object-fit: cover;" />
+        <div class="col-lg-6">
+          <img src="../Assets/imgs/P8.jpg" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+            style="max-height: 400px;" alt="Atelier Robinetterie">
         </div>
       </div>
     </section>
 
-    <section class="mb-5">
-      <h2 class="h3 text-secondary mb-4"><i class="bi bi-images"></i> Nos Réalisations</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <img src="../Assets/imgs/P8.jpg" class="img-fluid rounded shadow w-100 h-100 object-fit-cover"
-            alt="Réalisation Diesel 1">
+    <section id="prestations-robinetterie" class="mb-5 py-5 bg-light rounded-4 px-4 px-md-5 my-5">
+      <div class="text-center mb-5">
+
+        <h2 class="h3 fw-bold text-dark display-6">Nos Prestations</h2>
+
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Étude technique -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Étude Technique</h5>
+            <p class="small text-muted mb-0">Dimensionnement, sélection des robinets, étude de compatibilité
+              chimique et mécanique avec les process.</p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img src="../Assets/imgs/P9.jpg" class=" img-fluid rounded shadow w-100 h-100 object-fit-cover"
-            alt="Réalisation Diesel 2">
+        <!-- Maintenance -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Maintenance</h5>
+            <p class="small text-muted mb-0">Révision, épreuve d’étanchéité, tarage des soupapes, contrôles normatifs.
+              Maintenance préventive et réfection.</p>
+          </div>
+        </div>
+        <!-- Dépannage -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Dépannage</h5>
+            <p class="small text-muted mb-0">Service d’astreinte disponible, remise en état sur site avec nos machines
+              portatives de rodage.</p>
+          </div>
+        </div>
+        <!-- Travaux neufs -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Travaux Neufs</h5>
+            <p class="small text-muted mb-0">Pose de tuyauterie &amp; robinetterie sur des projets sur-mesure ou
+              extension d'installations.</p>
+          </div>
+        </div>
+        <!-- Parc machine -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Notre Parc Machine</h5>
+            <p class="small text-muted mb-0">
+              Rodage (TCEM V10, Plan), Usinage (SERCO TU), Bancs de tarage fixes et mobiles (jusqu'au DN 650).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5 py-5">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5">
+          <h3 class="h4 text-secondary mb-3 display-6">Performance & Conformité</h3>
+          <p class="lead text-muted lh-lg">
+            Nos équipements de pointe et notre savoir-faire nous permettent de garantir la performance de vos vannes
+            et soupapes, assurant ainsi la sécurité et l'efficacité de vos installations industrielles.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="../Assets/imgs/PHOTO6.jpg" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+            alt="Équipement Robinetterie">
         </div>
       </div>
     </section>
