@@ -14,9 +14,16 @@
 
 <body>
   <header class="fixed-top">
-    <section class="bg-light py-2 text-end px-5">
+    <section class="bg-light py-2 px-5 d-flex justify-content-end align-items-center">
+      <div class="me-4 small fw-bold font-monospace">
+        <span class="text-dark">FR</span>
+        <span class="mx-2 text-muted">|</span>
+        <a href="#" class="text-muted text-decoration-none text-opacity-75 hover-opacity-100">EN</a>
+      </div>
       <a href="https://www.linkedin.com/company/ici-servicesci/" target="_blank"
-        class="text-decoration-none text-primary"><i class="bi bi-linkedin fs-4 align-middle"></i></a>
+        class="text-decoration-none text-primary">
+        <i class="bi bi-linkedin fs-4 align-middle"></i>
+      </a>
     </section>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -78,48 +85,81 @@
   </section>
   <main class="container subpage-padding">
 
-    <section class="mb-5">
-      <p class="lead">
-        Mise en place d’un suivi régulier des équipements sur site, nécessitant des
-        Nous réalisons le contrôle, la vérification et l’étalonnage des équipements dans notre
-        laboratoire à partir de banc étalon relié aux étalons internationaux chaque année  :
-      </p>
-    </section>
+    <section class="mb-5 py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="h3 text-secondary mb-3 display-6">Métrologie & Instrumentation</h2>
+          <p class="lead text-muted lh-lg">
+            Nous assurons la fiabilité de vos mesures grâce à un suivi rigoureux et des équipements de pointe.
+            Contrôle, vérification et étalonnage dans notre laboratoire certifié.
+          </p>
 
-    <section class="mb-5">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <ul class="list-group list-group-flush fs-5">
-            <li class="list-group-item">
-              <strong>GRANDEUR ÉLECTRIQUE :</strong> Multimètre, ampèremètre, voltmètre, mégohmmètres, etc.
-            </li>
-            <li class="list-group-item">
-              <strong>PRESSION & DÉBIT :</strong> Manomètre, capteur de pression, transmetteur de pression, compteur,
-              débitmètre, etc.
-            </li>
-            <li class="list-group-item">
-              <strong>Température :</strong> Thermomètre et sonde.
-            </li>
-            <li class="list-group-item">
-              <strong>Force :</strong> Clé dynamométrique, tournevis dynamométrique et contrôleur de couple.
-            </li>
-            <li class="list-group-item">
-              <strong>Dimensionnel :</strong> Pied à coulisse, jauge, micromètre, comparateur, niveau, etc.
-            </li>
-          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="../Assets/imgs/P6.jpg" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+            style="max-height: 400px;" alt="Laboratoire de Métrologie">
         </div>
       </div>
     </section>
-    <section class="mb-5">
-      <h2 class="h3 text-secondary mb-4"><i class="bi bi-images"></i> Nos Réalisations</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <img src="../Assets/imgs/P6.jpg" class="img-fluid rounded shadow w-100 h-100 object-fit-cover"
-            alt="Réalisation Diesel 1">
+
+    <section id="prestations-metrologie" class="mb-5 py-5 bg-light rounded-4 px-4 px-md-5 my-5">
+      <div class="text-center mb-5">
+
+        <h2 class="h3 fw-bold text-dark display-6">Nos Domaines d'Intervention</h2>
+
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Grandeur Électrique -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Grandeur Électrique</h5>
+            <p class="small text-muted mb-0">Multimètre, ampèremètre, voltmètre, mégohmmètres...</p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img src="../Assets/imgs/P7.jpg" class=" img-fluid rounded shadow w-100 h-100 object-fit-cover"
-            alt="Réalisation Diesel 2">
+        <!-- Pression & Débit -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Pression & Débit</h5>
+            <p class="small text-muted mb-0">Manomètre, capteur, transmetteur, débitmètre...</p>
+          </div>
+        </div>
+        <!-- Température -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Température</h5>
+            <p class="small text-muted mb-0">Thermomètres et sondes de température.</p>
+          </div>
+        </div>
+        <!-- Force -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Force </h5>
+            <p class="small text-muted mb-0">Clé et tournevis dynamométriques.</p>
+          </div>
+        </div>
+        <!-- Dimensionnel -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card border-top-accent h-100 p-4">
+            <h5 class="mb-2">Dimensionnel</h5>
+            <p class="small text-muted mb-0">Pied à coulisse, jauge, micromètre, niveau...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5 py-5">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5">
+          <h3 class="h4 text-secondary mb-3 display-6">Technologie et Expertise</h3>
+          <p class="lead text-muted lh-lg">
+            Notre laboratoire est équipé de bancs étalons reliés aux standards internationaux, garantissant
+            la traçabilité et la précision de toutes nos interventions.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="../Assets/imgs/P7.jpg" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+            alt="Équipement de Mesure">
         </div>
       </div>
     </section>
