@@ -1,6 +1,6 @@
 #logo-img {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   padding: 0;
   margin: 0;
 }
@@ -21,38 +21,59 @@
 
 /* Section d'accueil avec image */
 .accueil {
-  background-image: url('./Assets/imgs/environmental-pollution-factory-exterior-night.webp');
-  /* Remplacez par le chemin de votre image */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  /* 100% de la hauteur de l'écran */
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  color: white;
-  /* Couleur du texte */
-  text-align: center;
+    background-image: url('./Assets/imgs/environmental-pollution-factory-exterior-night.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    position: relative;
 }
 
+/* Assombrissement de l'image */
+.accueil::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Texte au-dessus du filtre */
 .acceuil-txt {
-  margin-top: 10rem;
-  transform: scale(1);
-  transition: 0.9s;
+    position: relative;
+    z-index: 1;
 
+    max-width: 1000px;
+    margin-top: 5rem;
 }
-
 
 .accueil h1 {
-  font-size: 4rem;
-  font-weight: bold;
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 6rem);
+    line-height: 1.05;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-.accueil p {
-  font-size: 1.5rem;
+.accueil h1 span {
+    display: block;
 }
 
-
+@media (max-width: 576px) {
+    .accueil h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        line-height: 1.1;
+    }
+}
 
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
