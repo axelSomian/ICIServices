@@ -436,3 +436,26 @@
   color: #6c757d;
   margin-bottom: 1.25rem;
 }
+
+#agrements {
+    position: relative;
+}
+
+#agrements::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url('./Assets/imgs/image003.png');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;     
+    z-index: 0;
+}
+
+#agrements > * {
+    position: relative;
+    z-index: 1;
+}
