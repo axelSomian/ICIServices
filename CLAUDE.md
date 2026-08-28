@@ -18,12 +18,15 @@ Static marketing website for **ICI Services**, an industrial solutions company b
 
 - `index.html` — Landing page with hero, about, services grid, certifications, stats, footer
 - `Pages/*.html` — Six service detail pages (diesel, incendie, metrologie, robinetterie, achat, actualite) plus `contact.html`
-- `styles.css` — Single shared stylesheet for all pages
-- `Assets/imgs/` — All image assets (~40 files: logos, backgrounds, service photos)
+- `en/index.html` + `en/pages/*.html` — English mirror of every French page (same structure, translated content)
+- `styles.css` — Single shared stylesheet for all pages (FR and EN)
+- `Assets/imgs/` — All image assets, shared by both languages
 
 ### Conventions
 
-All pages share the same header/footer HTML structure — when updating navigation or footer content, **edit every page** (no templating engine is in use).
+All pages share the same header/footer HTML structure — when updating navigation or footer content, **edit every page** (no templating engine is in use). This includes the English mirror: a structural or content change to `Pages/diesel.html` must also be made in `en/pages/diesel.html`, and vice-versa.
+
+**Bilingual (FR/EN):** The FR/EN toggle in the top bar links each page to its counterpart. French pages live at the root (`index.html`, `Pages/*.html`, `lang="fr"`); English pages under `en/` (`en/index.html`, `en/pages/*.html`, `lang="en"`). English asset paths carry one extra `../` (`../../Assets/...` from `en/pages/`). Adding a new page means creating both language versions and wiring both toggle links.
 
 Bootstrap 5.3.3 and Bootstrap Icons 1.3.0 are loaded from CDN (jsDelivr). No local copies.
 
